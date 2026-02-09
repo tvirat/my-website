@@ -1,0 +1,358 @@
+/*
+  CSS (Cascading Style Sheets) controls how your webpage LOOKS.
+  
+  Think of HTML as the structure (the skeleton) and CSS as the styling (the paint, colors, and decorations).
+  
+  CSS works by selecting HTML elements and applying styles to them.
+  You can select elements by:
+  - Tag name (like "body", "h1", "p")
+  - Class name (like ".card")
+  - ID name (like "#myButton")
+  
+  Each style rule has:
+  - A selector (what element to style)
+  - Properties (what to change, like "color" or "font-size")
+  - Values (the new value, like "blue" or "20px")
+  
+  Example:
+  h1 {
+    color: blue;
+    font-size: 32px;
+  }
+  
+  This makes all <h1> headings blue and 32 pixels tall.
+*/
+
+/* ============================================
+   RESET AND BASE STYLES
+   ============================================ */
+
+/*
+  This removes default browser styling so your page looks consistent
+  across different browsers (Chrome, Firefox, Safari, etc.).
+*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/*
+  The body tag styles apply to the entire page.
+  These are your base styles - everything inherits from here.
+*/
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  /*
+    TODO #1: Change the font-family to something you like.
+    Common options:
+    - "Georgia, serif" (serif font, good for reading)
+    - "Courier New, monospace" (monospace font, like a typewriter)
+    - "Verdana, sans-serif" (clean sans-serif)
+    - Or use Google Fonts: https://fonts.google.com
+    
+    The first font is preferred, but if it's not available,
+    the browser tries the next one in the list.
+  */
+
+  line-height: 1.6;
+  /* This makes text easier to read by adding space between lines. */
+
+  color: #333;
+  /* This is the default text color (dark gray, almost black). */
+
+  background-color: #ffffff;
+  /*
+    TODO #2: Change the background-color to something you like.
+    You can use:
+    - Color names: "lightblue", "coral", "lavender"
+    - Hex codes: "#f0f0f0" (light gray), "#e8f4f8" (light blue)
+    - RGB: rgb(240, 248, 255) (light blue)
+    
+    Example: background-color: #f5f5f5;
+  */
+
+  padding: 0;
+  /* No padding on body - navigation and content handle their own spacing */
+}
+
+/* ============================================
+   HEADER STYLES
+   ============================================ */
+
+header {
+  /*
+    TODO #3: Style your header section.
+    Try adding:
+    - background-color: #4a90e2; (or any color you like)
+    - color: white; (text color)
+    - padding: 20px; (space inside the header)
+    - text-align: center; (centers the text)
+    - margin-bottom: 30px; (space below the header)
+  */
+
+  /* TODO #3: Add your header styles here */
+  margin-bottom: 30px;
+}
+
+/* ============================================
+   NAVIGATION BAR STYLES
+   ============================================ */
+
+/*
+  The navigation bar is already styled and working.
+  You can customize these styles if you want to change how it looks.
+*/
+
+nav {
+  background-color: #333;
+  /* Dark background for the navigation bar */
+
+  padding: 0;
+  /* Remove default padding */
+
+  margin-bottom: 20px;
+  /* Space below the navigation bar */
+}
+
+nav ul {
+  list-style: none;
+  /* Remove bullet points from the list */
+
+  margin: 0;
+  padding: 0;
+  /* Remove default margins and padding */
+
+  display: flex;
+  /* Display list items in a row (horizontal layout) */
+
+  justify-content: center;
+  /* Center the navigation items */
+
+  flex-wrap: wrap;
+  /* Allow items to wrap to next line on small screens */
+}
+
+nav li {
+  margin: 0;
+  /* Remove default margin from list items */
+}
+
+nav a {
+  display: block;
+  /* Make the entire link area clickable */
+
+  color: white;
+  /* White text color */
+
+  text-decoration: none;
+  /* Remove underline from links */
+
+  padding: 15px 25px;
+  /* Add space inside each link (top/bottom, left/right) */
+
+  transition: background-color 0.3s ease;
+  /* Smooth color transition on hover */
+}
+
+nav a:hover {
+  background-color: #555;
+  /* Darker background when mouse hovers over link */
+}
+
+nav a:active {
+  background-color: #777;
+  /* Even darker when link is clicked */
+}
+
+/* Style for the current page link (optional - you can add this later with JavaScript) */
+nav a.active {
+  background-color: #4a90e2;
+  /* Highlight the current page */
+}
+
+header h1 {
+  /* Styles specifically for the <h1> inside the header */
+  font-size: 2.5em;
+  /* TODO #4: Try changing the font-size. You can use: 2em, 3em, 48px, etc. */
+}
+
+/* ============================================
+   MAIN CONTENT STYLES
+   ============================================ */
+
+main {
+  max-width: 800px;
+  /*
+    TODO #5: Center your main content.
+    Add these two properties:
+    - margin: 0 auto; (centers the container horizontally)
+    
+    The max-width limits how wide the content can get on large screens,
+    making it easier to read.
+  */
+
+  margin: 0 auto;
+  /* TODO #5: Uncomment the line above or add it if you want centered content */
+
+  padding: 20px;
+  /* Adds space inside the main content area */
+}
+
+/* ============================================
+   BUTTON STYLES
+   ============================================ */
+
+button {
+  /*
+    TODO #6: Style your button.
+    Try adding:
+    - background-color: #4a90e2;
+    - color: white;
+    - padding: 10px 20px;
+    - border: none;
+    - border-radius: 5px; (rounded corners)
+    - font-size: 16px;
+    - cursor: pointer; (shows a hand cursor on hover)
+  */
+
+  /* TODO #6: Add your button styles here */
+
+  /* Default button styles - these make buttons look clickable */
+  background-color: #4a90e2;
+  color: white;
+  padding: 12px 24px;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  /* Smooth transitions for hover effects */
+}
+
+/*
+  The :hover pseudo-class styles the button when the mouse is over it.
+  This creates an interactive effect.
+*/
+button:hover {
+  /*
+    TODO #7: Add hover styles to your button.
+    Try changing:
+    - background-color: #357abd; (darker shade)
+    - transform: scale(1.05); (slightly enlarges the button)
+    
+    Note: If you use transform, you might want to add:
+    - transition: all 0.3s ease; (to the button style above, for smooth animation)
+  */
+
+  /* TODO #7: Add your hover styles here */
+
+  /* Hover effect - makes button darker and slightly larger */
+  background-color: #357abd;
+  transform: scale(1.05);
+}
+
+/* Style for buttons inside anchor tags (like the contact button) */
+a button {
+  text-decoration: none;
+  /* Remove any link styling from the button */
+  display: inline-block;
+  /* Allows the button to work properly inside a link */
+}
+
+a button:hover {
+  /* Inherit the button hover styles */
+}
+
+/* ============================================
+   CARD STYLE (BONUS)
+   ============================================ */
+
+/*
+  TODO #8: Create a "card" class that you can use to style sections.
+  
+  In your HTML, add class="card" to any element you want to style as a card.
+  Example: <div class="card">Your content here</div>
+  
+  Card styles typically include:
+  - background-color: white;
+  - border: 1px solid #ddd; (or border: none;)
+  - border-radius: 8px; (rounded corners)
+  - padding: 20px;
+  - box-shadow: 0 2px 4px rgba(0,0,0,0.1); (subtle shadow)
+  - margin-bottom: 20px; (space below the card)
+*/
+
+.card {
+  /* TODO #8: Add your card styles here */
+}
+
+/* ============================================
+   FOOTER STYLES
+   ============================================ */
+
+footer {
+  /*
+    TODO #9: Style your footer section.
+    Try adding:
+    - background-color: #333; (dark background)
+    - color: white; (light text)
+    - text-align: center;
+    - padding: 20px;
+    - margin-top: 40px; (space above the footer)
+  */
+
+  /* TODO #9: Add your footer styles here */
+}
+
+/* ============================================
+   LIST STYLES
+   ============================================ */
+
+ul,
+ol {
+  margin-left: 30px;
+  /* Adds indentation for lists. */
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+li {
+  margin-bottom: 8px;
+  /* Adds space between list items. */
+}
+
+/* ============================================
+   IMAGE STYLES
+   ============================================ */
+
+img {
+  max-width: 100%;
+  /* Makes images responsive - they won't overflow their container. */
+  height: auto;
+  /* Maintains the image's aspect ratio. */
+
+  border-radius: 8px;
+  /* Optional: adds rounded corners to images. */
+
+  margin: 20px 0;
+  /* Adds space above and below images. */
+}
+
+/* ============================================
+   TROUBLESHOOTING TIPS
+   ============================================
+   
+   If your styles aren't showing up:
+   1. Check that your CSS file is linked correctly in index.html:
+      <link rel="stylesheet" href="css/style.css">
+   
+   2. Make sure the file path is correct. If index.html is in the root folder,
+      and style.css is in a "css" folder, the path "css/style.css" is correct.
+   
+   3. Check for typos in your CSS. Missing semicolons (;) or curly braces ({})
+      can break your styles.
+   
+   4. Use your browser's Developer Tools (F12 or Right-click -> Inspect)
+      to see if there are any errors.
+*/

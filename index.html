@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<!--
+  HTML (HyperText Markup Language) is the foundation of every webpage.
+  It defines the STRUCTURE and CONTENT of your page - like the skeleton of a building.
+  
+  This file tells the browser:
+  - What text to display
+  - Where images go
+  - How content is organized (headings, paragraphs, lists, etc.)
+  
+  HTML uses "tags" (like <h1>, <p>, <div>) to mark up content.
+  Most tags come in pairs: an opening tag (<tag>) and a closing tag (</tag>).
+-->
+
+<html lang="en">
+<!--
+  The <html> tag wraps everything on the page.
+  lang="en" tells browsers this page is in English (helps with accessibility and translation).
+-->
+
+<head>
+  <!--
+    The <head> section contains information ABOUT your page that users don't see directly.
+    This includes the page title (shown in browser tabs), links to CSS files, and metadata.
+  -->
+  
+  <meta charset="UTF-8">
+  <!--
+    This tells the browser what character encoding to use.
+    UTF-8 supports all languages and special characters - always include this!
+  -->
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!--
+    This makes your page work well on mobile devices.
+    It tells the browser to match the screen width and start at 1x zoom.
+  -->
+  
+  <title>My First Website</title>
+  <!--
+    TODO #1: Change the text between <title> and </title> to something personal.
+    This text appears in the browser tab, not on the page itself.
+    Example: <title>Sarah's Portfolio</title>
+  -->
+  
+  <!--
+    This links your CSS file (style.css) to this HTML page.
+    CSS controls how your page LOOKS (colors, fonts, spacing, layout).
+  -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+  <!--
+    The <body> tag contains everything that users will SEE on your webpage.
+    All your content goes here: text, images, buttons, etc.
+  -->
+  
+  <!--
+    HEADER SECTION
+    The <header> tag is a semantic HTML element - it tells browsers and screen readers
+    "this is the top section of the page." Using semantic tags helps with accessibility.
+  -->
+  <header>
+    <!--
+      NAVIGATION BAR
+      The <nav> tag is a semantic HTML element for navigation links.
+      This navigation bar appears at the top of every page and helps users
+      move between different sections of your website.
+    -->
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="projects.html">Projects</a></li>
+      </ul>
+    </nav>
+    
+    <!--
+      TODO #2: Add a heading here using the <h1> tag.
+      Example: <h1>Welcome to My Website</h1>
+      
+      HTML has 6 heading levels: <h1> (biggest) through <h6> (smallest).
+      Use <h1> only once per page for the main title.
+    -->
+    
+    <!-- TODO #2: Add your heading here -->
+    
+  </header>
+  
+  <!--
+    MAIN CONTENT SECTION
+    The <main> tag wraps the primary content of your page.
+    This helps screen readers and search engines understand your page structure.
+  -->
+  <main>
+    <!--
+      TODO #3: Add a paragraph about yourself using the <p> tag.
+      Example: <p>Hi! I'm a student learning web development. I love coding!</p>
+    -->
+    
+    <!-- TODO #3: Add your paragraph here -->
+    
+    <!--
+      TODO #4: Create a list of your favorite things.
+      Use <ul> (unordered list) for bullet points, or <ol> (ordered list) for numbers.
+      Each item goes inside an <li> (list item) tag.
+      
+      Example:
+      <ul>
+        <li>Pizza</li>
+        <li>Video games</li>
+        <li>Coding</li>
+      </ul>
+    -->
+    
+    <!-- TODO #4: Add your list here -->
+    
+    <!--
+      TODO #5: Add a button using the <button> tag.
+      Give it an id attribute so you can select it in JavaScript later.
+      Example: <button id="myButton">Click Me!</button>
+    -->
+    
+    <!-- TODO #5: Add your button here -->
+    
+    <!--
+      TODO #6: Add an image placeholder.
+      Use the <img> tag. Images don't have closing tags.
+      The src attribute points to the image file.
+      The alt attribute describes the image for screen readers (accessibility).
+      
+      Example:
+      <img src="assets/my-photo.jpg" alt="A photo of me">
+      
+      Note: You don't need to add an actual image file right now.
+      You can use a placeholder URL like: src="https://via.placeholder.com/400x300"
+      Or leave it commented out until you have an image ready.
+    -->
+    
+    <!-- TODO #6: Add your image here -->
+    
+    <!--
+      TODO #7: Create a new section with an id attribute.
+      This will be useful later when you learn about linking to specific parts of the page.
+      
+      Example:
+      <section id="about-me">
+        <h2>About Me</h2>
+        <p>More content here...</p>
+      </section>
+    -->
+    
+    <!-- TODO #7: Add your new section here -->
+    
+  </main>
+  
+  <!--
+    FOOTER SECTION
+    The <footer> tag is another semantic element for the bottom of your page.
+    Common footer content: copyright info, links, contact info.
+  -->
+  <footer>
+    <p>Created during the Website Building Workshop</p>
+    <!-- TODO #8: Add your name or a personal message to the footer -->
+  </footer>
+  
+  <!--
+    This links your JavaScript file (script.js) to this HTML page.
+    JavaScript controls INTERACTIVITY and BEHAVIOR (what happens when users click buttons, etc.).
+    
+    The "defer" attribute means the script will run AFTER the HTML is fully loaded.
+    This is important so JavaScript can find the HTML elements it needs to work with.
+  -->
+  <script defer src="js/script.js"></script>
+</body>
+</html>
