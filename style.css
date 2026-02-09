@@ -90,9 +90,16 @@ header {
     - text-align: center; (centers the text)
     - margin-bottom: 30px; (space below the header)
   */
-
+  background-color: #ffffff;
+  padding: 40px 20px 60px 20px;
   /* TODO #3: Add your header styles here */
-  margin-bottom: 30px;
+  margin-bottom: 40px;
+}
+
+.hero {
+  text-align: center;
+  max-width: 800px;
+  margin: 0 auto;
 }
 
 /* ============================================
